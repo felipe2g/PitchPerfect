@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKS-Ai-AiT">
-                                <rect key="frame" x="134" y="385" width="106" height="30"/>
+                                <rect key="frame" x="134.5" y="385" width="106" height="30"/>
                                 <state key="normal" title="Stop Recording"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVj-f4-c5i"/>
@@ -50,7 +50,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="recordButton" destination="5CA-0J-egg" id="gWT-AY-0YN"/>
                         <outlet property="recordingLabel" destination="btn-Fx-Skz" id="WbH-yk-hkJ"/>
+                        <outlet property="stopRecordingButton" destination="DKS-Ai-AiT" id="HvR-36-mxm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
