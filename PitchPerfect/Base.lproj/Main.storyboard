@@ -24,24 +24,29 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ux0-pK-DkX"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btn-Fx-Skz">
-                                <rect key="frame" x="134" y="356" width="106" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btn-Fx-Skz">
+                                <rect key="frame" x="134.5" y="356" width="106" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKS-Ai-AiT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKS-Ai-AiT">
                                 <rect key="frame" x="134" y="385" width="106" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Stop Recording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVj-f4-c5i"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5CA-0J-egg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Act-Uh-WQI"/>
+                            <constraint firstItem="btn-Fx-Skz" firstAttribute="centerX" secondItem="5CA-0J-egg" secondAttribute="centerX" id="d16-NE-o8r"/>
+                            <constraint firstItem="btn-Fx-Skz" firstAttribute="top" secondItem="5CA-0J-egg" secondAttribute="bottom" constant="7.5" id="p6M-BQ-V8i"/>
                             <constraint firstItem="5CA-0J-egg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q8f-1b-usW"/>
+                            <constraint firstItem="DKS-Ai-AiT" firstAttribute="centerX" secondItem="btn-Fx-Skz" secondAttribute="centerX" id="qlR-LG-Hee"/>
+                            <constraint firstItem="DKS-Ai-AiT" firstAttribute="top" secondItem="btn-Fx-Skz" secondAttribute="bottom" constant="8" symbolic="YES" id="uyf-Bf-aLA"/>
                         </constraints>
                     </view>
                     <connections>
