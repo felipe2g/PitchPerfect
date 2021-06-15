@@ -71,8 +71,24 @@
                     <view key="view" contentMode="scaleToFill" id="Ef1-qG-Nax">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cD0-pg-svN">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ShI-Sx-tR7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qL5-d9-J35"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cD0-pg-svN" firstAttribute="leading" secondItem="qL5-d9-J35" secondAttribute="leading" id="6sc-sd-R5O"/>
+                            <constraint firstItem="cD0-pg-svN" firstAttribute="top" secondItem="qL5-d9-J35" secondAttribute="top" id="cye-I2-fR3"/>
+                            <constraint firstItem="qL5-d9-J35" firstAttribute="bottom" secondItem="cD0-pg-svN" secondAttribute="bottom" id="jga-lp-jTR"/>
+                            <constraint firstItem="qL5-d9-J35" firstAttribute="trailing" secondItem="cD0-pg-svN" secondAttribute="trailing" id="uY4-TS-dzY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3cO-ea-T8M"/>
                 </viewController>
@@ -104,9 +120,6 @@
         <image name="Stop" width="155" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
